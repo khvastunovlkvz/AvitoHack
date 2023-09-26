@@ -3,6 +3,7 @@ package com.lkvz.avito_perekup;
 import com.codeborne.selenide.Configuration;
 
 import com.codeborne.selenide.Selenide;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -35,6 +36,8 @@ public class BaseSetUp {
 /*
         Configuration.remote = "http://109.106.139.39:4444/wd/hub";
 */
+        WebDriverManager.chromedriver().setup();
+        Configuration.browserVersion = "109";
         Configuration.browser = "chrome";
         Configuration.baseUrl = "https://www.avito.ru";
         Configuration.pageLoadStrategy = "eager";
