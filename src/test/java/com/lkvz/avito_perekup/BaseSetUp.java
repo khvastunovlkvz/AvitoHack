@@ -29,7 +29,9 @@ public class BaseSetUp {
             voronezh1200kR200km = "/voronezh/avtomobili?cd=1&f=" +
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20iOj" +
-                    "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1";
+                    "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1",
+            uvarovo1200k300km = "/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1";
+
 
     @BeforeAll
     public static void setUp() {
@@ -54,7 +56,7 @@ public class BaseSetUp {
 
     @BeforeEach
     public void init() {
-        open(voronezh1200kR200km);
+        open(uvarovo1200k300km);
 
     }
 

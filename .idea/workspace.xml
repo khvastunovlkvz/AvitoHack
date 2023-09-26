@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6f1245-2fe2-401b-974e-de028ba19830" name="Changes" comment="v1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/BaseSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/BaseSetUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +197,7 @@
       <workItem from="1695184569024" duration="1217000" />
       <workItem from="1695408634004" duration="2637000" />
       <workItem from="1695545659107" duration="2504000" />
-      <workItem from="1695757788104" duration="1888000" />
+      <workItem from="1695757788104" duration="3292000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1695757893654</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695760898661</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v1">
+      <created>1695761505526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695761505526</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
