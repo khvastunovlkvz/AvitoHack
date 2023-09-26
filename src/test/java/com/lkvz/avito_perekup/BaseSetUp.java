@@ -36,13 +36,9 @@ public class BaseSetUp {
         Configuration.remote = "http://109.106.139.39:4444/wd/hub";
 */
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "109";
-        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://www.avito.ru";
         Configuration.pageLoadStrategy = "eager";
-/*
         Configuration.headless = true;
-*/
 
         Configuration.browserCapabilities = new ChromeOptions()
                 .addArguments("--no-sandbox")
