@@ -30,7 +30,8 @@ public class BaseSetUp {
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20iOj" +
                     "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1",
-            uvarovo1200k300km = "/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1";
+            uvarovo1200k300km = "/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1",
+            uvarovo500k100km = "/uvarovo/avtomobili/do-500000-rubley-ASgCAgECAUXGmgwWeyJmcm9tIjowLCJ0byI6NTAwMDAwfQ?cd=1&radius=100&s=104&searchRadius=100&user=1";
 
 
     @BeforeAll
@@ -56,7 +57,7 @@ public class BaseSetUp {
 
     @BeforeEach
     public void init() {
-        open(uvarovo1200k300km);
+        open(uvarovo500k100km);
 
     }
 
