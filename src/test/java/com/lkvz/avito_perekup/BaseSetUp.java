@@ -32,7 +32,8 @@ public class BaseSetUp {
                     "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1",
             uvarovo1200k300km = "/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1",
             uvarovo500k100km = "/uvarovo/avtomobili/do-500000-rubley-ASgCAgECAUXGmgwWeyJmcm9tIjowLCJ0byI6NTAwMDAwfQ?cd=1&radius=100&s=104&searchRadius=100&user=1",
-            uvarovo700k200km = "/uvarovo/avtomobili?cd=1&f=ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~AIZeyJmcm9tIjo4OTMsInRvIjozMjM1OTYwfcaaDBZ7ImZyb20iOjAsInRvIjo3MDAwMDB9&radius=200&s=104&searchRadius=200&user=1";
+            uvarovo700k200km = "/uvarovo/avtomobili?cd=1&f=ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~AIZeyJmcm9tIjo4OTMsInRvIjozMjM1OTYwfcaaDBZ7ImZyb20iOjAsInRvIjo3MDAwMDB9&radius=200&s=104&searchRadius=200&user=1",
+            uvarovo1300k200km = "/uvarovo/avtomobili/do-1300000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTMwMDAwMH0?cd=1&radius=200&s=104&searchRadius=200&user=1";
 
 
     @BeforeAll
@@ -58,7 +59,7 @@ public class BaseSetUp {
 
     @BeforeEach
     public void init() {
-        open(uvarovo700k200km);
+        open(uvarovo1300k200km);
 
     }
 
