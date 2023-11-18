@@ -13,27 +13,27 @@ import static com.codeborne.selenide.Selenide.*;
 public class BaseSetUp {
 
     String
-            uvarovo400kR100km = "/uvarovo/avtomobili/do-400000-rubley-" +
+            uvarovo400kR100km = "https://www.avito.ru/uvarovo/avtomobili/do-400000-rubley-" +
             "ASgCAgECAUXGmgwWeyJmcm9tIjowLCJ0byI6NDAwMDAwfQ?cd=1&f=" +
             "ASgBAgECAUTyCrCKAQJF~AIZeyJmcm9tIjo4OTgsInRvIjozMjM1OTY" +
             "wfcaaDBZ7ImZyb20iOjAsInRvIjo0MDAwMDB9&radius=100&s=104&" +
             "searchRadius=100&user=1",
-            gribanovskiy1000kR200km = "/gribanovskiy/avtomobili?cd=1&f=" +
+            gribanovskiy1000kR200km = "https://www.avito.ru/gribanovskiy/avtomobili?cd=1&f=" +
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20i" +
                     "OjAsInRvIjoxMDAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1",
-            voronezh1200kR50km = "/voronezh/avtomobili?cd=1&f=" +
+            voronezh1200kR50km = "https://www.avito.ru/voronezh/avtomobili?cd=1&f=" +
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20iOj" +
                     "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=50&user=1",
-            voronezh1200kR200km = "/voronezh/avtomobili?cd=1&f=" +
+            voronezh1200kR200km = "https://www.avito.ru/voronezh/avtomobili?cd=1&f=" +
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20iOj" +
                     "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1",
-            uvarovo1200k300km = "/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1",
-            uvarovo500k100km = "/uvarovo/avtomobili/do-500000-rubley-ASgCAgECAUXGmgwWeyJmcm9tIjowLCJ0byI6NTAwMDAwfQ?cd=1&radius=100&s=104&searchRadius=100&user=1",
-            uvarovo700k200km = "/uvarovo/avtomobili?cd=1&f=ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~AIZeyJmcm9tIjo4OTMsInRvIjozMjM1OTYwfcaaDBZ7ImZyb20iOjAsInRvIjo3MDAwMDB9&radius=200&s=104&searchRadius=200&user=1",
-            uvarovo1300k200km = "/uvarovo/avtomobili/do-1300000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTMwMDAwMH0?cd=1&radius=200&s=104&searchRadius=200&user=1";
+            uvarovo1200k300km = "https://www.avito.ru/uvarovo/avtomobili/do-1200000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTIwMDAwMH0?cd=1&radius=300&s=104&searchRadius=300&user=1",
+            uvarovo500k100km = "https://www.avito.ru/uvarovo/avtomobili/do-500000-rubley-ASgCAgECAUXGmgwWeyJmcm9tIjowLCJ0byI6NTAwMDAwfQ?cd=1&radius=100&s=104&searchRadius=100&user=1",
+            uvarovo700k200km = "https://www.avito.ru/uvarovo/avtomobili?cd=1&f=ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~AIZeyJmcm9tIjo4OTMsInRvIjozMjM1OTYwfcaaDBZ7ImZyb20iOjAsInRvIjo3MDAwMDB9&radius=200&s=104&searchRadius=200&user=1",
+            uvarovo1300k200km = "https://www.avito.ru/uvarovo/avtomobili/do-1300000-rubley-ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTMwMDAwMH0?cd=1&radius=200&s=104&searchRadius=200&user=1";
 
 
     @BeforeAll
@@ -59,7 +59,7 @@ public class BaseSetUp {
 
     @BeforeEach
     public void init() {
-        open(uvarovo1300k200km);
+        open(System.getProperty("url", uvarovo1300k200km));
 
     }
 
