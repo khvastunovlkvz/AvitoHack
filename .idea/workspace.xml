@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b6f1245-2fe2-401b-974e-de028ba19830" name="Changes" comment="v1">
+    <list default="true" id="6b6f1245-2fe2-401b-974e-de028ba19830" name="Changes" comment="v2 add parametrized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/BaseSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/BaseSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/FilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lkvz/avito_perekup/FilterPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +201,7 @@
       <workItem from="1697129730453" duration="836000" />
       <workItem from="1697822740602" duration="596000" />
       <workItem from="1698782289178" duration="297000" />
-      <workItem from="1700332037865" duration="1376000" />
+      <workItem from="1700332037865" duration="2546000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1695757893654</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698782603439</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v2 add parametrized">
+      <created>1700333472821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700333472821</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +285,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1" />
+    <MESSAGE value="v2 add parametrized" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2 add parametrized" />
   </component>
 </project>

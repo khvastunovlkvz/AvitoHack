@@ -71,7 +71,7 @@ public class FilterPage {
 
             if((fullTime.contains("секунд")||
                     fullTime.contains("минут")) &&
-                    timeInteger <= 5 &&
+                    timeInteger <= 20 &&
                     !locations.contains(location)){
                 String href = ad.$(".iva-item-title-py3i_ a").getAttribute("href");
                 if (!hrefs.contains(href)){
