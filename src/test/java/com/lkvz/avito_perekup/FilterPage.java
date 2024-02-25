@@ -36,8 +36,8 @@ public class FilterPage {
         locations.add("Воронеж");
         locations.add("Липецк");
 */
-        locations.add("Тамбов");
-    }
+ /*       locations.add("Тамбов");
+*/    }
 
 
 
@@ -91,4 +91,13 @@ public class FilterPage {
                 .body("{\"chat_id\": \"" + chatId + "\", \"text\": \""+ time + "\n " + href  +"\", \"disable_notification\": true}")
                 .post("https://api.telegram.org/"+ tokenBot +"/sendMessage");
     }
+    private static void notifications(String message){
+        given()
+                .contentType(ContentType.JSON)
+                .body("{\"chat_id\": \"" + chatId + "\", \"text\": \""+ message + "\", \"disable_notification\": true}")
+                .post("https://api.telegram.org/"+ tokenBot +"/sendMessage");
+    }
+     public static void setNotification(String message){
+        notifications(message);
+     }
 }

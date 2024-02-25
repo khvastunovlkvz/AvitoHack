@@ -17,6 +17,7 @@ public class BaseSetUp {
             "ASgBAgECAUTyCrCKAQJF~AIZeyJmcm9tIjo4OTgsInRvIjozMjM1OTY" +
             "wfcaaDBZ7ImZyb20iOjAsInRvIjo0MDAwMDB9&radius=100&s=104&" +
             "searchRadius=100&user=1",
+            uvarovo1800kR200km = "/uvarovo/avtomobili?f=ASgCAgECAUXGmgwXeyJmcm9tIjowLCJ0byI6MTgwMDAwMH0&radius=200&s=104&searchRadius=200&user=1",
             gribanovskiy1000kR200km = "/gribanovskiy/avtomobili?cd=1&f=" +
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20i" +
@@ -29,6 +30,7 @@ public class BaseSetUp {
                     "ASgBAQECA0TyCrCKAYYUyOYB~vAP6Lv3AgFA9sQNFL6wOgJF~" +
                     "AIZeyJmcm9tIjo4OTksInRvIjozMjM1OTYwfcaaDBd7ImZyb20iOj" +
                     "AsInRvIjoxMjAwMDAwfQ&radius=200&s=104&searchRadius=200&user=1";
+
 
     @BeforeAll
     public static void setUp() {
@@ -51,13 +53,14 @@ public class BaseSetUp {
 
     @BeforeEach
     public void init() {
-        open(voronezh1200kR200km);
+        open(uvarovo1800kR200km);
 
     }
 
 
     @AfterEach
     public void attachmentAdd() {
+        FilterPage.setNotification("Владимир программа перенаебнулась");
         Selenide.closeWebDriver();
     }
 
